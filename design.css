@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(252, 179, 44);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+
+}
+
+.gen {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav-bar {
+  background-color: rgb(43, 43, 43);
+  color: rgb(252, 179, 44);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  width: 450px;
+  height: 100px;
+  justify-content: space-between;
+  padding: 0 35px;
+  position: relative;
+  
+}
+
+.nav-bar i {
+  font-size: 30px;
+  padding-top: 30px;
+}
+
+.Hover-effect {
+  transition: border 3s;
+  cursor: pointer;
+}
+
+.Hover-effect:hover  i{
+  padding: 15px;
+  border-radius: 50px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  background-color: rgb(43, 42, 42);
+  border: 8px solid rgb(252, 179, 44);
+  position: absolute;
+  top: -35px;
+}
+
+.Hover-effect div {
+  opacity: 0;
+  padding-left: 12px;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.Hover-effect:hover div {
+  opacity: 1;
+}
+
