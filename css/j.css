@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  background-color: rgb(252, 179, 44);
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: center; */
+}
+
+.body {
+  width: 50vw;
+  height: 50vh;
+  font-size: 10px;
+  background-color: rgb(77, 62, 62);
+}
+
+.body p {
+  font-size: 1em;
+  height: 2em;
+  background-color: red;
+}
+
+.body span {
+  font-size: 2em;
+  color: rgb(252, 179, 44);
+}
