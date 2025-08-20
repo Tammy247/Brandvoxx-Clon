@@ -12,7 +12,7 @@ body {
 }
 
 .body {
-  width: 50vw;
+  width: 500px;
   height: 50vh;
   font-size: 10px;
   background-color: rgb(77, 62, 62);
@@ -27,4 +27,22 @@ body {
 .body span {
   font-size: 2em;
   color: rgb(252, 179, 44);
+}
+
+.flex {
+  display: flex;
+  width: 100%;
+  gap: 1%;
+  background: rgb(136, 0, 255);
+  height: fit-content;
+  flex-wrap: wrap;
+  padding: 2%;
+}
+
+.flex div {
+  width: 20%;
+  height: 100px;
+  background-color: rgb(252, 179, 44);
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
