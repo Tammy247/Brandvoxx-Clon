@@ -5,19 +5,21 @@
 }
 
 body {
-  overflow-x: scroll;
+  overflow-x: hidden;
 }
 
 /* HEADER */
 .header {
   max-width: 100%;
-  margin: 0 10%;
+  margin: 0 7%;
 }
 
 header {
   background-color: #511abc;
-  padding: 15px 0;
+  padding: 20px 0;
   position: sticky;
+  right: 0;
+  left: 0;
   top: 0;
   z-index: 100;
 }
@@ -72,46 +74,41 @@ nav .list {
 
 #Hero-section {
   display: flex;
+  margin: 20px 8%;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
 }
 
 #Hero-section .left {
-  margin-left: 10%;
-  margin-right: 5%;
-  margin-top: 8%;
-  margin-bottom: 8%;
-  align-content: center;
-  width: auto;
+  position: relative;
 }
 
 .left h1 {
-  font-size: 3em;
+  font-size: 3rem;
   color: indigo;
-  position: relative;
 }
 
 .left p {
   font-size: 1em;
   line-height: 1.5;
-  margin-top: 3%;
+  margin-top: 20px;
 }
 
-.left .triangle {
-  position: absolute;
-  right: 48vw;
-  top: 10vw;
+.hero-text-ctn {
+  position: relative;
 }
 
-.left .lines {
+.triangle {
   position: absolute;
-  right: 45vw;
-  top: 15vw;
+  right: -10px;
+  top: -70px;
 }
 
-.left .arrow {
+.left .lines {    
   position: absolute;
-  right: 42vw;
-  top: 25vw;
-  height: 53px;
+  right: 1px;
+  top: 15px;
 }
 
 input[type="text"] {
@@ -127,6 +124,14 @@ input[type="text"] {
   border: 1px solid gainsboro;
   box-shadow: 0 10px 25px rgb(205, 205, 205);
 }
+
+.arrow {
+  position: absolute;
+  right: -55px;
+  top: -50px;
+  height: 50px;
+}
+
 #Hero-section .left button {
   border-radius: 0.8rem;
   padding: 5em;
@@ -211,7 +216,7 @@ input[type="text"] {
 #why {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  margin: 0 10%;
+  margin: 0 auto;
   grid-auto-rows: 200px;
 }
 
@@ -399,7 +404,7 @@ input[type="text"] {
   padding-bottom: 10px;
 }
 
-/* GROWING YOUR BRAND WITH BRANDVOXX */
+/* GROWING YOUR BRAND WITH BRANDVOXX
 #growth .head {
   text-align: center;
   padding-top: 40px;
@@ -455,11 +460,11 @@ input[type="text"] {
   padding-top: 3px;
   font-size: 12px;
   margin-left: 60px;
-}
+} */
 
-#contact .contact-card {
+/* #contact .contact-card {
   display: flex;
   height: 40vh;
   width: 80rem;
   background-color: #f4f4f4;
-}
+} */

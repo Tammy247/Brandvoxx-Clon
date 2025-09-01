@@ -1,0 +1,236 @@
+.blog-hero-img-ctn {
+  width: 100%;
+  height: 80vh;
+  overflow: hidden;
+}
+
+.blog-hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.blog-hero {
+  margin: 0 auto;
+  margin-top: 6%;
+  margin-bottom: 3%;
+  text-align: center;
+  width: 60%;
+  line-height: 1.4;
+}
+
+.blog-hero h1 {
+  font-size: 2em;
+  margin-bottom: 5px;
+  color: rgb(10, 0, 95);
+}
+
+.category-ctn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.category {
+  width: 40%;
+  height: 70vh;
+}
+
+.cat-img-ctn {
+  height: 60%;
+}
+
+.category-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+}
+
+.text-holder {
+  color: white;
+  height: 40%;
+  background: linear-gradient(to bottom, #0693e6, #59a3ce);
+  padding: 20px;
+  line-height: 1.2;
+}
+
+.text-holder h3 {
+  padding-bottom: 10px;
+  /* font-size: 15px; */
+  font-weight: 100;
+}
+
+.text-holder p {
+  /* font-size: 1em; */
+  font-weight: 600;
+}
+
+.category-section-ctn {
+  margin-top: 6%;
+}
+
+.category-section{
+  align-items: center;
+}
+
+.category-section h2 {
+  padding-bottom: 20px;
+  text-align: center;
+  color: rgb(10, 0, 95);
+  font-size: 2em;
+}
+
+.cat-btn-ctn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cat-btn {
+  border-radius: 15px;
+  padding: 5px 10px;
+  margin-right: 8px;
+  border: 1px solid rgb(214, 214, 214);
+  transition: background-color 0.5s;
+  cursor: pointer;
+}
+
+.cat-btn:hover {
+  background-color: rgb(48, 188, 243);
+  border: none;
+}
+
+.cat-btn:active {
+  opacity: 0.8;
+}
+
+.category-ctn-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin: 4% 10%;
+}
+
+.cat-img-ctn-main {
+  width: 100%;
+  height: auto;
+}
+
+.cat-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+.cat-text-holder {
+  width: 100%;
+  line-height: 1.4;
+}
+
+.cat-text-holder h2 {
+  margin-bottom: 20px;
+  color: rgb(10, 0, 95);
+}
+
+.cat-text-holder p {
+  margin-bottom: 30px;
+}
+
+.cat-text-holder a {
+  text-decoration: none;
+  color: blue;
+}
+
+.random-ctn {
+  /* width: 100%; */
+  height: auto;
+  margin: 4% 2%;
+  background-color: rgb(231, 231, 231);
+  border-radius: 10px;
+  padding: 4% 0;
+}
+
+.random-text-holder {
+  justify-content: center;
+  align-items: center;
+}
+
+.random-text-holder h2{
+   text-align: center;
+   padding: 0 30px;
+   color: rgb(10, 0, 95);
+   font-size: 1.5rem;
+}
+
+.random-grid-ctn {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 40px;
+  justify-items: center;
+  margin: 0 10%;
+  margin-top: 3%;
+  line-height: 1.4;
+}
+
+.random-grid h3 {
+  text-align: center;
+}
+.random-grid i {
+  color: rgb(10, 0, 95);
+  margin: 0 50%;
+}
+
+.reach-section-ctn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.reach-section-ctn form {
+  width: 50vw;
+  background: url(/img/ChatGPT\ Image\ Aug\ 27\,\ 2025\,\ 12_50_39\ AM.png);
+  border-radius: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"] {
+  margin: 3% 5%;
+  width: 90%;
+  padding: 20px;
+  border-radius: 8px;
+  border: none;
+  opacity: 0.7;
+}
+
+.send-btn {
+  width: 50%;
+  margin: 3% 25%;
+  text-align: center;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: rgba(48, 188, 243, 0.7);
+  color: white;
+  border: none;
+}
+
+.send-btn:hover {
+  background-color: rgba(48, 188, 243, 1);
+}
+
+.send-btn:active {
+  opacity: 0.8;
+}
+
+form h3 {
+  color: white;
+  font-size: 2rem;
+  margin-top: 3%;
+  text-align: center;
+}
