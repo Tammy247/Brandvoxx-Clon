@@ -1,0 +1,35 @@
+@media screen and (max-width: 800px){
+  nav {
+    display: none;
+  }
+
+  #Hero-section {
+    flex-direction: column-reverse;
+  }
+
+  .brand {
+    width: 100%;
+  }
+
+  #why {
+    /* grid-template-columns: repeat(1, 1fr); */
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .brands {
+    flex-direction: column;
+  }
+
+  #why {
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 40px;
+    grid-auto-rows: auto;
+  }
+
+  .nested-img {
+    grid-column: 1;
+    grid-row: 3/5;
+  }
+
+}

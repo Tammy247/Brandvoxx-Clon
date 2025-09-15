@@ -4,19 +4,11 @@
   box-sizing: border-box;
 }
 
-body {
-  overflow-x: hidden;
-}
-
 /* HEADER */
-.header {
-  max-width: 100%;
-  margin: 0 7%;
-}
 
 header {
   background-color: #511abc;
-  padding: 20px 0;
+  padding: 20px 10%;
   position: sticky;
   right: 0;
   left: 0;
@@ -24,7 +16,7 @@ header {
   z-index: 100;
 }
 
-header .header {
+.header {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -42,22 +34,18 @@ nav .list {
 }
 
 .list li {
-  margin: 0 15px;
+  margin: 0 12px;
 }
 
 .list li a {
   text-decoration: none;
   color: white;
+  transition: background-color 0.4s;
 }
 
 .list .active,
 .list a:hover {
   color: orange;
-}
-
-.list .btn:hover {
-  color: white;
-  background-color: indigo;
 }
 
 .list .btn {
@@ -66,22 +54,29 @@ nav .list {
   border-radius: 5px;
 }
 
-.header .list .home {
-  color: orange;
+.list .btn:hover,
+.list .active:hover {
+  color: white;
+  background-color: indigo;
+}
+
+.list .btn:active {
+  opacity: 0.8;
 }
 
 /* HERO SECTION */
 
 #Hero-section {
   display: flex;
-  margin: 20px 8%;
-  justify-content: space-between;
   align-items: center;
-  gap: 40px;
+  justify-content: center;
+  margin: 4% 10%;
+  gap: 50px;
 }
 
 #Hero-section .left {
   position: relative;
+  width: 100%;
 }
 
 .left h1 {
@@ -101,8 +96,8 @@ nav .list {
 
 .triangle {
   position: absolute;
-  right: -10px;
-  top: -70px;
+  left: 0;
+  top: 10px;
 }
 
 .left .lines {    
@@ -112,53 +107,51 @@ nav .list {
 }
 
 input[type="text"] {
-  height: 100%;
+  border-radius: 10px;
   width: 100%;
-  border-radius: 0.5rem;
+  height: 100%;
+  border: none;
+  padding-left: 10px;
 }
 .input {
   position: relative;
-  height: 70px;
-  width: 90%;
+  height: 80px;
   margin-top: 4%;
   border: 1px solid gainsboro;
+  border-radius: 8px;
   box-shadow: 0 10px 25px rgb(205, 205, 205);
 }
 
-.arrow {
+.book-service {
   position: absolute;
+  right: 5px;
+  top: 5px;
+  bottom: 5px;
+  width: 30%;
+}
+
+.book-service button {
+  border-radius: 10px;
+  border: none;
+  height: 100%;
+  width: 100%;
+  background-color: #5f24d4;
+  color: white;
+}
+
+.arrow {
+  position: absolute; 
   right: -55px;
   top: -50px;
   height: 50px;
 }
 
-#Hero-section .left button {
-  border-radius: 0.8rem;
-  padding: 5em;
-  height: 100px;
-  width: 100px;
-  background-color: #511abc;
-  color: white;
-  border: none;
-}
-.book-service {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-}
-
+/* Right Image Section */
 #Hero-section .right {
-  margin-right: 22%;
-  margin-top: 3%;
-  margin-bottom: 3%;
-  align-content: center;
-}
-
-.right img {
-  height: auto;
-  width: 130%;
-  max-width: 600px;
+  width: 100%;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
 }
 
 /* KEY SERVICES */
@@ -174,22 +167,24 @@ input[type="text"] {
 }
 
 #key-services .brands {
+  display: flex;
   justify-content: center;
   justify-content: space-evenly;
-  display: flex;
-  margin: 0 12%;
+  margin: 0 10%;
+  padding-bottom: 4%;
+  gap: 10px;
 }
 
 .brand {
   border-radius: 0.6rem;
   height: auto;
-  width: 273px;
+  width: 300px;
   background-color: white;
   padding: 20px;
   border: 1px solid gainsboro;
-  margin-bottom: 4vw;
-  margin-top: 1vw;
+  margin-top: 1%;
 }
+
 .brands .brand h1 {
   color: #260c58;
   padding: 13px 0;
@@ -216,8 +211,12 @@ input[type="text"] {
 #why {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  margin: 0 auto;
-  grid-auto-rows: 200px;
+  margin: 0 10%;
+  margin-top: 1%;
+  margin-bottom: 3%;
+  row-gap: 25px;
+  column-gap: 30px;
+  grid-auto-rows: auto;
 }
 
 #why-choose-us .key h1 {
@@ -226,47 +225,13 @@ input[type="text"] {
 
 #why-choose-us .key {
   padding-top: 40px;
+  padding-bottom: 20px;
   text-align: center;
 }
 
-.why1 {
-  grid-column: 1;
-  grid-row: 1;
-  height: 100%;
-  width: 70%;
-}
-.why2 {
-  grid-column: 3;
-  grid-row: 1;
-  height: 100%;
-  width: 70%;
-}
-.why3 {
-  grid-column: 1;
-  grid-row: 2;
-  height: 100%;
-  width: 70%;
-}
-.why4 {
-  grid-column: 3;
-  grid-row: 2;
-  height: 100%;
-  width: 70%;
-}
-.nested-img {
-  grid-column: 2;
-  grid-row: 1;
-  height: 100%;
-  width: 70%;
-  margin-top: 10px;
-  margin-right: 100px;
-}
-
-.nested-img img {
-  width: 100%;
-  height: 100%;
-  padding-right: 30px;
-  padding-top: 50px;
+.why {
+  height: fit-content;
+  /* background-color: green; */
 }
 
 #why h1 {
@@ -281,6 +246,20 @@ input[type="text"] {
   line-height: 1.5;
 }
 
+.nested-img {
+  grid-column: 2/3;
+  grid-row: 1/3;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* background-color: brown; */
+} 
+
+.nested-img img {
+  width: 90%;
+}
 /* WHAT OUR CLIENT */
 #clients {
   background-color: #f4f4f4;
@@ -338,7 +317,7 @@ input[type="text"] {
 
 /* OUR SERVICES */
 
-#services .service {
+/* #services .service {
   text-align: center;
   padding-top: 40px;
 }
@@ -402,7 +381,7 @@ input[type="text"] {
   width: 490px;
   padding-top: 10px;
   padding-bottom: 10px;
-}
+} */
 
 /* GROWING YOUR BRAND WITH BRANDVOXX
 #growth .head {
