@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="js/index2.js"></script>
     <link rel="stylesheet" href="css/global.css" />
     <link rel="stylesheet" href="css/index.css" />
     <link rel="stylesheet" href="mobileview/index.css">
@@ -15,8 +16,19 @@
         <img
           src="img/logo8.jpg" alt="brandvoxx logo8" class="logo"
         />
-        <nav>
+        <nav class="desktopView">
           <ul class="list">
+            <li><a href="#Hero-section" class="active">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#" class="btn">Contact</a></li>
+          </ul>
+        </nav>
+
+        <i class="fa-solid fa-bars"></i>
+        <nav class="mobileView">
+          <ul class="listMobile">
             <li><a href="#Hero-section" class="active">Home</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#services">Services</a></li>
@@ -135,135 +147,199 @@
     <!-- WHAT OUR CLIENTS THINK -->
     <section id="clients">
       <div class="client">
-        <h1 style="color: #511abc">
-          What Our <span style="color: orange">Client</span> Think About Us
+        <h1>
+          What Our <span>Client</span> Think About Us
         </h1>
       </div>
-      <div class="general">
-        <div class="slide1">
+      
+        <div class="slideCtn">
+          <!-- First -->
           <div class="slide">
-            <h1>TechUp Port Harcourt Team</h1>
-            <p style="line-height: 2">Management</p>
-            <i class="fa-solid fa-star" style="color: orange"></i>
-            <i class="fa-solid fa-star" style="color: orange"> </i>
-            <i class="fa-solid fa-star" style="color: orange"></i>
-            <i class="fa-solid fa-star" style="color: orange"></i>
-            <i class="fa-solid fa-star" style="color: orange"></i>
-            <img src="/img/techup-ph.jpg" alt="" />
+            <div class="slideSubCtn">
+              <div class="slideHeader">
+                <h3>TechUp Port Harcourt Team</h3>
+
+                             
+                <p>Management</p>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"> </i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+
+              <div class="slideImgCtn">
+                <img src="/img/techup-ph.jpg" alt="" />
+              </div>
+            </div>
+
+            <div class="textCtn">
+              <p class="para">
+                Brandvoxx handled our event branding and marketing with incredible
+                professionalism. We hit record turnout numbers!. From flyers to
+                volunteer coordination and social buzz; Brandvoxx delivered a
+                flawless experience end-to
+              </p>
+            </div>
           </div>
-          <p class="para">
-            Brandvoxx handled our event branding and marketing with incredible
-            professionalism. We hit record turnout numbers!. From flyers to
-            volunteer coordination and social buzz; Brandvoxx delivered a
-            flawless experience end-to
-          </p>
-          <div class="slide" style="height: 156px">
-            <h1>Blake</h1>
-            <p style="line-height: 2">Management</p>
-            <i class="fa-solid fa-star" style="color: orange"></i>
-            <i class="fa-solid fa-star" style="color: orange"></i>
-            <i class="fa-solid fa-star" style="color: orange"></i>
-            <i class="fa-solid fa-star" style="color: orange"></i>
-            <i class="fa-solid fa-star" style="color: orange"></i>
-            <img
-              src="/img/blake.jpg"
-              alt=""
-              style="height: 68px; width: 65px"
-            />
-          </div>
-          <p class="para">
-            Working with BrandVoxx elevated our entire visual identity. Now
-            we're attracting investors and partners like never before.
-          </p>
-          <div class="slide" style="height: 170px">
-            <h1>TechPass Africa.</h1>
-            <p style="line-height: 2">Management</p>
-            <i class="fa-solid fa-star" style="color: orange"></i>
-            <i class="fa-solid fa-star" style="color: orange"></i>
-            <i class="fa-solid fa-star" style="color: orange"></i>
-            <i class="fa-solid fa-star" style="color: orange"></i>
-            <i class="fa-solid fa-star" style="color: orange"></i>
-            <img
-              src="/img/techpass.png"
-              alt=""
-              style="height: 90px; width: 65px"
-            />
-          </div>
-          <p class="para">
-            They didn't just market us-- they understood us. Every campaign felt
-            aligned with our voice and values.
-          </p>
+
+          <!-- Second -->
           <div class="slide">
-            <h1>Techtan Innovation hub</h1>
-            <p style="line-height: 2">Management</p>
-            <i class="fa-solid fa-star" style="color: orange"></i>
-            <i class="fa-solid fa-star" style="color: orange"></i>
-            <i class="fa-solid fa-star" style="color: orange"></i>
-            <i class="fa-solid fa-star" style="color: orange"></i>
-            <i class="fa-solid fa-star" style="color: orange"></i>
-            <img
-              src="/img/techtan.jpg"
-              alt=""
-              style="height: 68px; width: 65px"
-            />
+            <div class="slideSubCtn">
+              <div class="slideHeader">
+                <h3>Blake</h3>
+
+                             
+                <p>Management</p>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"> </i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+
+              <div class="slideImgCtn">
+                <img src="/img/blake.jpg" alt="" />
+              </div>
+            </div>
+
+            <div class="textCtn">
+              <p class="para">
+                Working with BrandVoxx elevated our entire visual identity.
+                Now we're attracting investors and partners like never before.
+              </p>
+            </div>
           </div>
-          <p class="para">
-            From brandiong to SEO BrandVoxx gave our startup a powerful and
-            professional digital presence.
-          </p>
-          <div class="slide" style="height: 156px">
-            <h1>Ticare</h1>
-            <p style="line-height: 2.3">Management</p>
-            <i class="fa-solid fa-star" style="color: orange"></i>
-            <i class="fa-solid fa-star" style="color: orange"></i>
-            <i class="fa-solid fa-star" style="color: orange"></i>
-            <i class="fa-solid fa-star" style="color: orange"></i>
-            <i class="fa-solid fa-star" style="color: orange"></i>
-            <img
-              src="/img/ticare1.png"
-              alt=""
-              style="height: 68px; width: 65px"
-            />
-          </div>
-          <p class="para">
-            What stood out was the strategy and story telling. Our brand is
-            becoming more than a product;it is turning into a movement.
-          </p>
+
+          <!-- Third -->
           <div class="slide">
-            <h1>AgroPaddy</h1>
-            <p style="line-height: 2">Management</p>
-            <i class="fa-solid fa-star" style="color: orange"></i>
-            <i class="fa-solid fa-star" style="color: orange"></i>
-            <i class="fa-solid fa-star" style="color: orange"></i>
-            <i class="fa-solid fa-star" style="color: orange"></i>
-            <i class="fa-solid fa-star" style="color: orange"></i>
-            <img
-              src="/img/agropaddy.png"
-              alt=""
-              style="height: 80px; width: 65px"
-            />
+            <div class="slideSubCtn">
+              <div class="slideHeader">
+                <h3>Tech Pass Africa</h3>
+
+                
+                <p>Management</p>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"> </i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              
+              <div class="slideImgCtn">
+                <img src="/img/techpass.png" alt="" />
+              </div>
+            </div>
+
+            <div class="textCtn">
+              <p class="para">
+                They didn't just market us-- they understood us. Every campaign felt
+                aligned with our voice and values.
+              </p>
+            </div>
           </div>
-          <p class="para">
-            The content team nailed our vibe. Every visual, caption, and ad felt
-            authentic and impactful
-          </p>
+
+          <!-- Fourth -->
+          <div class="slide">
+            <div class="slideSubCtn">
+              <div class="slideHeader">
+                <h3>Techtan Inovation Hub</h3>
+
+                <p>Management</p>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"> </i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+
+              <div class="slideImgCtn">
+                <img src="/img/techtan.jpg" alt="" />
+              </div>
+            </div>
+
+            <div class="textCtn">
+              <p class="para">
+                From brandiong to SEO BrandVoxx gave our startup a powerful and
+                professional digital presence.
+              </p>
+            </div>
+          </div>
+
+          <!-- Fifth -->
+          <div class="slide">
+            <div class="slideSubCtn">
+              <div class="slideHeader">
+                <h3>Ticare</h3>
+
+                <p>Management</p>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"> </i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>      
+                <i class="fa-solid fa-star"></i>
+              </div>
+              
+                <div class="slideImgCtn">
+                  <img src="/img/ticare1.png" alt="" />
+                </div>         
+              </div>
+
+            <div class="textCtn">
+              <p class="para">
+                What stood out was the strategy and story telling. Our brand is
+                becoming more than a product;it is turning into a movement.
+              </p>
+            </div>
+          </div>
+
+          <!-- Sixth -->
+          <div class="slide">
+            <div class="slideSubCtn">
+              <div class="slideHeader">
+                <h3>Agropady</h3>
+
+                  <p>Management</p>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"> </i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+              </div>
+
+                <div class="slideImgCtn">
+                  <img src="/img/agropaddy.png" alt="" />
+                </div>          
+            </div>
+
+            <div class="textCtn">
+              <p class="para">
+                The content team nailed our vibe. Every visual, caption, and ad felt
+                authentic and impactful.
+              </p>
+            </div>
+          </div>
+
         </div>
-      </div>
     </section>
 
     <!-- OUR SERVICES -->
     <section id="services">
       <div class="service">
-        <h1 style="color: #511abc">
-          Our <span style="color: orange">Services</span>
+        <h1>
+          Our <span>Services</span>
         </h1>
       </div>
+
       <div class="head">
-        <div class="sub">
-          <div>
-            <!-- <img src="/img/s1_074201.svg" alt="web 1" /> -->
+
+        <!-- First -->
+        <div class="subCtn">
+          <div class="subImgCtn">
+            <img src="/img/s1_074201.svg" alt="web 1" />
           </div>
-          <div class="sub1" style="padding-left: 50px">
+
+          <div class="sub">
             <h1>Branding & identity</h1>
             <p>
               We create logos, messaging, and brand elements that tell your
@@ -272,8 +348,10 @@
             <button>Book Service</button>
           </div>
         </div>
-        <div class="sub">
-          <div class="sub1" style="padding-left: 8px; padding-right: 30px">
+
+        <!-- Second -->
+        <div class="subCtn">
+          <div class="sub">
             <h1>Digital Marketing</h1>
             <p>
               We boost your online presence through smart ads, social mdeia
@@ -281,19 +359,18 @@
             </p>
             <button>Book Service</button>
           </div>
-          <div>
-            <!-- <img src="/img/s2_074200.svg" alt="web 2" /> -->
+          <div class="subImgCtn">
+            <img src="/img/s2_074200.svg" alt="web 2" />
           </div>
         </div>
-        <div class="sub">
-          <div>
-            <!-- <img
-              src="/img/s3_074158.svg"
-              alt="web 3"
-              style="padding-left: 8px"
-            /> -->
+
+        <!-- Third -->
+        <div class="subCtn">
+          <div class="subImgCtn">
+            <img src="/img/s3_074158.svg" alt="web 3"/>
           </div>
-          <div class="sub1" style="padding-left: 50px">
+
+          <div class="sub">
             <h1>Content Creation & Marketing</h1>
             <p>
               From scrolling-stopping visuals to powerful storytelling, we craft
@@ -303,8 +380,10 @@
             <button>Book Service</button>
           </div>
         </div>
-        <div class="sub">
-          <div class="sub1" style="padding-right: 50px; padding-left: 8px">
+
+        <!-- Fourth -->
+        <div class="subCtn">
+          <div class="sub">
             <h1>Events Marketing & Volunteers Management</h1>
             <p>
               We plan, promote, and manage events while coordinating passionate
@@ -312,19 +391,20 @@
             </p>
             <button>Book Service</button>
           </div>
-          <div>
-            <!-- <img src="/img/s4_074157.svg" alt="web 4" /> -->
+
+          <div class="subImgCtn">
+            <img src="/img/s4_074157.svg" alt="web 4" />
           </div>
         </div>
-        <div class="sub">
-          <div>
-            <!-- <img
-              src="/img/s5_074155.svg"
-              alt="web 5"
-              style="padding-left: 8px"
-            /> -->
+        
+        <!-- Fifth -->
+        <div class="subCtn">
+          <div class="subImgCtn">
+            <img
+              src="/img/s5_074155.svg" alt="web 5"/>
           </div>
-          <div class="sub1" style="padding-left: 50px">
+
+          <div class="sub">
             <h1>Political & Corporate Influence</h1>
             <p>
               We shape public perception with expert political branding,
@@ -334,8 +414,10 @@
             <button>Book Service</button>
           </div>
         </div>
-        <div class="sub">
-          <div class="sub1" style="padding-right: 50px; padding-left: 8px">
+
+        <!-- Sixth -->
+        <div class="subCtn">
+          <div class="sub">
             <h1>Website & SEO</h1>
             <p>
               We design responsive websites and optimize SEO to help your
@@ -343,15 +425,19 @@
             </p>
             <button>Book Service</button>
           </div>
-          <div>
-            <!-- <img src="/img/s6_074154.svg" alt="web 6" /> -->
+
+          <div class="subImgCtn">
+            <img src="/img/s6_074154.svg" alt="web 6" />
           </div>
         </div>
-        <div class="sub">
-          <div>
-            <!-- <img src="/img/s7_074151.svg" alt="web 7" /> -->
+
+        <!-- Seventh -->
+        <div class="subCtn">
+          <div class="subImgCtn">
+            <img src="/img/s7_074151.svg" alt="web 7" />
           </div>
-          <div class="sub1" style="padding-left: 50px">
+
+          <div class="sub">
             <h1>Custom Services</h1>
             <p>
               Need something unique? We offer reputation management, consulting,
@@ -368,47 +454,82 @@
     <section id="growth">
       <div class="growing">
         <div class="head">
-          <h1 style="color: #511abc">
-            Growing Your Brand With <span style="color: orange">Brandvoxx</span>
+          <h1>
+            Growing Your Brand With <span>Brandvoxx</span>
           </h1>
-          <p style="padding-top: 10px">A 4-Step Journey</p>
+          <p>A 4-Step Journey</p>
         </div>
+
         <div class="deve">
-          <div class="con" style="margin-left: 10%; margin-right: 10px">
-            <div class="icon1">1</div>
-            <div class="icon"><i class="fa-solid fa-user-check"></i></div>
-            <h1 style="padding-top: 35px">Discover Your Brand Voice</h1>
-            <p>
-              Uncover what makes you unique and define a voice that connects
-              deeply
-            </p>
-          </div>
+
+          <!-- First -->
           <div class="con">
-            <h1>Develop Your Brand Strategy</h1>
-            <p style="padding-bottom: 35px">
-              Craft a clear, goal-driven roadmap to position, grow, and sustain
-              your brand.
-            </p>
-            <div class="icon1">2</div>
-            <div class="icon"><i class="fa-solid fa-book"></i></div>
+            <div class="icon">
+              <div class="iconCtn">
+                <i class="fa-solid fa-user-check"></i>
+
+                <!-- <div class="icon1">1</div> -->
+              </div>
+            </div>
+
+            <div class="conText">
+              <h1>Discover Your Brand Voice</h1>
+              <p>
+                Uncover what makes you unique and define a voice that connects
+                deeply
+              </p>
+            </div>
           </div>
-          <div class="con" style="margin-left: 10px">
-            <div class="icon1">3</div>
-            <div class="icon"><i class="fa-solid fa-bell"></i></div>
-            <h1 style="padding-top: 35px">Amplify Your Brand Presence</h1>
-            <p>
-              Boost visibility across platforms with content, campaigns, and
-              creative that demands attention
-            </p>
+
+          <!-- Second -->
+          <div class="con">
+            <div class="conText">
+              <h1>Develop Your Brand Strategy</h1>
+              <p>
+                Craft a clear, goal-driven roadmap to position, grow, and sustain
+                your brand.
+              </p>
+            </div>
+
+            <div class="icon">
+              <i class="fa-solid fa-book"></i>
+
+              <div class="icon1">2</div>
+            </div>
           </div>
-          <div class="con" style="margin-right: 10%; margin-left: 10px">
-            <h1>Optimize & Refine</h1>
-            <p style="padding-bottom: 35px">
-              Continuously improve strategies using data, insights, and feedback
-              to scale your brand.
-            </p>
-            <div class="icon1">4</div>
-            <div class="icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+
+          <!-- Third -->
+          <div class="con">
+            <div class="icon">
+              <i class="fa-solid fa-bell"></i>
+
+              <div class="icon1">3</div>
+            </div>
+
+            <div class="conText">
+              <h1>Amplify Your Brand Presence</h1>
+              <p>
+                Boost visibility across platforms with content, campaigns, and
+                creative that demands attention
+              </p>
+            </div>
+          </div>
+
+          <!-- Fourth -->
+          <div class="con">
+            <div class="conText">
+              <h1>Optimize & Refine</h1>
+              <p>
+                Continuously improve strategies using data, insights, and feedback
+                to scale your brand.
+              </p>
+            </div>
+            
+            <div class="icon">
+              <i class="fa-solid fa-magnifying-glass"></i>
+
+              <div class="icon1">4</div>
+            </div>
           </div>
         </div>
       </div>

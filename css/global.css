@@ -12,6 +12,10 @@ body {
   font-family: "Nunito", sans-serif;
   
   overflow-x: hidden;
+
+  padding-top: 70px;
+
+  scroll-behavior: auto;
 }
 
 h1,

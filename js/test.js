@@ -10,4 +10,12 @@ hOne.appendChild(paragraph);
 
 hOne.appendChild(paragraph);
 hOne.appendChild(paragraph);
-hOne.style.backgroundColor = 'lightblue'; 
+hOne.style.backgroundColor = 'lightblue';
+
+function changeImg() {
+  document.getElementById("imgView").innerHTML ='<img scr="/img/img2.png">';
+};
+
+function changeText() {
+  const text = document.getElementById("myText").innerHTML = "My Name is Jonathan Wisdom an Aspiring Web Dev and a Forex Trader"
+}
